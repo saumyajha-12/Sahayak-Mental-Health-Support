@@ -15,7 +15,7 @@ const data = [
 
 const CustomChart = () => {
   return (
-    <div style={{ width: '100%', height: 400 }}>
+    <div style={{ width: '100%', height: 400 ,marginBottom: 100 }}>
       <h2 style={{ textAlign: 'center' }}>Your Weekly Progress</h2>
       <p style={{ textAlign: 'center' }}>Track your mood and activity throughout the week</p>
       <ResponsiveContainer>
@@ -33,8 +33,9 @@ const CustomChart = () => {
         </BarChart>
       </ResponsiveContainer>
       <p style={{ textAlign: 'center', marginTop: 10, fontSize: 12 }}>
-        Made with Recharts
+       
       </p>
+      <div></div>
     </div>
   );
 };

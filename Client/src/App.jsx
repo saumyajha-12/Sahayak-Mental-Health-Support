@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./home/Home";
 import VolunteerSignup from "./components/SignUpforVolunteers";
 import Page2 from './components/Page2';
-
+import ChatWithCounselor from "./components/chatcounselor";
 function App() {
   
   return (
@@ -17,6 +17,7 @@ function App() {
       <Route path='/login' element={<Login/>}></Route>      
       <Route path='/volunteer' element={<VolunteerSignup/>}></Route>    
       <Route path='/logedIn' element={<Page2 />} />
+      <Route path='/chat' element={<ChatWithCounselor />} />
     </Routes>
     // </BrowserRouter>
   );
