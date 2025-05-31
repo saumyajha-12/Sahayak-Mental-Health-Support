@@ -55,6 +55,10 @@ const DeltaCourseProgress = () => {
       </a>
     </div>
   </nav>
+    {/* New text at the bottom */}
+      <div className="w-full text-center mt-10 text-sm text-blue-600 italic font-serif">
+        Made with ❤️ by Team Snowhite
+      </div>
 </footer>
   );
 };
