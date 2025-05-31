@@ -1,8 +1,13 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ Add this line
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const navigate = useNavigate(); // ✅ Hook for navigation
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Add validation or API call here if needed
+    navigate('/logedIn'); // Navigate to Page2 on login
+  };
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 px-4">
@@ -46,7 +51,10 @@ const Login = () => {
         </div>
 
         {/* Login Button */}
-        <button className="w-full py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-md hover:opacity-90 transition">
+        <button
+          className="w-full py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-md hover:opacity-90 transition"
+          onClick={handleLogin}
+        >
           LOGIN
         </button>
 
@@ -63,7 +71,7 @@ const Login = () => {
           Or Sign Up Using{' '}
           <span
             className="text-purple-600 cursor-pointer hover:underline"
-            onClick={() => navigate('/register')} // ✅ Navigate to register
+            onClick={() => navigate('/register')}
           >
             SIGN UP
           </span>

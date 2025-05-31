@@ -146,7 +146,7 @@ const ScheduleSession = () => {
   const [appointmentDate, setAppointmentDate] = useState("");
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-purple-100 to-white px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-purple-100 to-white px-4 ">
       <div className="bg-white p-6 rounded-2xl shadow-xl w-full max-w-md text-center">
         <h2 className="text-black text-4xl font-bold mb-6">
           Talk to Us
@@ -179,10 +179,10 @@ const ScheduleSession = () => {
               type="datetime-local"
               value={appointmentDate}
               onChange={(e) => setAppointmentDate(e.target.value)}
-              className="w-full border border-violet-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-violet-400"
+              className="text-grey-900 w-full border border-violet-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-violet-400"
             />
             <button
-              className="w-full bg-pink-500 text-white py-2 rounded-md font-semibold hover:bg-pink-600"
+              className="w-full bg-pink-500 text-grey-900 py-2 rounded-md font-semibold hover:bg-pink-600"
               onClick={() =>
                 alert(`Appointment confirmed for ${appointmentDate}`)
               }

@@ -404,7 +404,7 @@ const ChatWithCounselor = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center px-4">
+    <div className="min-h-screen bg-purple-100 flex justify-center items-center px-4">
       <div className="w-full max-w-2xl h-[90vh] flex flex-col border rounded-2xl shadow-lg bg-white overflow-hidden">
         <div className="bg-violet-600 text-white px-6 py-4 text-xl font-semibold">
           Chat with Counselor
