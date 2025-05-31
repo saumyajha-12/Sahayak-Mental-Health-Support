@@ -8,9 +8,9 @@ const LandingPage = () => {
       {/* Hero Section */}
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
-  style={{
-    backgroundImage: `url('https://media.istockphoto.com/id/950599098/photo/were-going-to-get-through-this-i-promise.jpg?s=612x612&w=is&k=20&c=uGbRR8IOwnU0a0FkdQen94OCDE8FCdGyP_8-9nMxmZs=')`,
-  }}
+        style={{
+          backgroundImage: `url('https://media.istockphoto.com/id/950599098/photo/were-going-to-get-through-this-i-promise.jpg?s=612x612&w=is&k=20&c=uGbRR8IOwnU0a0FkdQen94OCDE8FCdGyP_8-9nMxmZs=')`,
+        }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
@@ -66,20 +66,22 @@ const LandingPage = () => {
           <p className="text-lg md:text-xl mb-10 max-w-2xl">
             Talk to caring, trained volunteers for free, or access professional emotional support anytime.
           </p>
+
+
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">
-              <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
-                100% FREE
-              </span>
-              Chat with a Volunteer Listener →
-            </button>
-            {/* <button className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full hover:bg-gray-100">
-              <span className="text-xs bg-black text-white px-2 py-0.5 rounded-full">
-                AFFORDABLE
-              </span>
-              Get Matched with a Counselor →
-            </button> */}
+            <Link to="/chat">
+              <button className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">
+                <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
+                  100% FREE
+                </span>
+                Chat with a Volunteer Listener →
+              </button>
+            </Link>
+
+            
           </div>
+
+
         </main>
 
         {/* Social Icons */}
@@ -179,12 +181,27 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <button className="flex items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
-          <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
-            100% FREE
-          </span>
-          Chat with a Volunteer Listener →
-        </button>
+
+<div className="flex flex-col sm:flex-row gap-4">
+  <Link to="/chat">
+    <button className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">
+      <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
+        100% FREE
+      </span>
+      Chat with a Volunteer Listener →
+    </button>
+  </Link>
+
+  {/* Uncomment this section if needed
+  <button className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full hover:bg-gray-100">
+    <span className="text-xs bg-black text-white px-2 py-0.5 rounded-full">
+      AFFORDABLE
+    </span>
+    Get Matched with a Counselor →
+  </button>
+  */}
+</div>
+
       </section>
 
     </div>
