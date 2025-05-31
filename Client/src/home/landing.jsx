@@ -6,18 +6,17 @@ import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <div className="font-sans relative bg-white">
+    <div className="font-sans relative bg-white ">
       {/* Hero Section */}
       <div
-        className="min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
+        className=" min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
         style={{ backgroundImage: "url('/bglanding.png')",height: '100vh' }}
 
       >
-      {<div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div> }
+      {<div className="absolute inset-0 z-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.13)' }}></div>
+ }
 
-        {/* <img src="/bglanding.jpg" alt="test" className="w-64 h-64" /> */}
-
-
+       
 
         {/* Header */}
         <header className="relative z-10 flex justify-between items-center p-6 text-white">
@@ -76,8 +75,8 @@ const LandingPage = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
            <Link to="/chat" style={{ textDecoration: 'none' }}>
-           <button className="flex items-center gap-2 bg-[#5C3317] text-white px-5 py-2 rounded-lg hover:bg-[#4b2813] no-underline">
-  <span className="text-xs bg-white text-[#5C3317] px-2 py-0.5 rounded-full">
+           <button className="flex items-center gap-2 bg-[#5C3317] text-white px-5 py-2 rounded-lg  hover:bg-[#4b2813] no-underline">
+  <span className="text-xs bg-white text-[#5C3317] px-2 py-0.5 rounded-full ">
                   100% FREE
                 </span>
                 Chat with a Volunteer Listener →
@@ -89,23 +88,6 @@ const LandingPage = () => {
 
 
         </main>
-
-        {/* Social Icons */}
-        {/* Social Icons */}
-        {/* <div className="fixed top-1/3 right-2 z-50 space-y-3">
-  {socialPlatforms.map(({ Icon, link }, index) => (
-    <a
-      key={index}
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block bg-white text-black rounded-full p-2 shadow hover:bg-gray-200"
-    >
-      <Icon className="w-5 h-5" />
-    </a>
-  ))}
-</div> */}
-
       </div>
 
       {/* Info Section */}
@@ -169,7 +151,7 @@ const LandingPage = () => {
         </p>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-5xl bg-white mx-auto mb-12">
           {/* Step 1 */}
           <div className="flex flex-col items-center">
             <img src="https://th.bing.com/th/id/OIP.DNkzbFxoo1Ev5LkFyCrwbAHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Step 1" className="w-24 h-24 mb-4" />

@@ -2,7 +2,7 @@ import React from "react";
 
 const DeltaCourseProgress = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
+    <footer className="footer sm:footer-horizontal bg-base-300 text-base-content bg-gray-200 text-gray-900 p-10">
   <nav>
     <h6 className="footer-title">About Us</h6>
     <a className="link link-hover">Our Mission</a>
