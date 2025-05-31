@@ -40,7 +40,7 @@ const BlogSection = () => {
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post, idx) => (
           <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden ">
-            <div className="h-48 p-t-20 bg-white-100 flex items-center justify-center">
+            <div className="h-48 p-t-20 bg-white-100 flex items-center justify-center m-10">
               <img
                 src={post.image}
                 alt={post.title}

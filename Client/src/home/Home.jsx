@@ -49,15 +49,15 @@ import BlogSection from "./blog";
 import ExerciseSuggestions from "../components/ExerciseSuggestions";
 import ChatWithCounselor from "../components/chatcounselor";
 import ScheduleCall from "../components/VideoCall";
-
+import Chatboxchatting from "./chatboxchatting";
 function Home() {
   return (
     <>
       <LandingPage />
       <FAQSection />
-    
+      <Chatboxchatting />
       {/* 👇 New Chat with Sahayak Bot Box */}
-      <div className="flex justify-center mt-8">
+      {/* <div className="flex justify-center mt-8 bg-white">
         <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm text-center">
           <h3 className="text-xl font-semibold mb-2 text-gray-800">Need Someone to Talk To?</h3>
           <p className="text-gray-600 mb-4">Start a conversation with the Sahayak Bot. It's always there to listen you.</p>
@@ -68,7 +68,7 @@ function Home() {
             Chat with Sahayak Bot 🤖
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* You can uncomment these as needed */}
       {/* <ScheduleCall/> */}

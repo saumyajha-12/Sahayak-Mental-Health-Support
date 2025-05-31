@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import download from '../images/download.png';
+//import download from '../images/download.png';
 
 
 
 const LandingPage = () => {
   return (
-    <div className="font-sans relative">
+    <div className="font-sans relative bg-white">
       {/* Hero Section */}
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
@@ -151,7 +151,7 @@ const LandingPage = () => {
         </div>
       </section>
       {/* 3 Simple Steps Section */}
-      <section className="bg-gray-50 text-gray-800 py-20 px-6 text-center">
+      <section className="bg-white text-gray-800 py-20 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">3 Simple Steps</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
           The most straight-forward and intuitive experience you can imagine.
