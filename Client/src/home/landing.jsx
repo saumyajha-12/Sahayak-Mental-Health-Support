@@ -172,14 +172,14 @@ const LandingPage = () => {
 
 
 <div className="flex flex-col sm:flex-row gap-4">
-  <Link to="/chat">
+  {/* <Link to="/chat">
     <button className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">
       <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
         100% FREE
       </span>
       Chat with a Volunteer Listener →
     </button>
-  </Link>
+  </Link> */}
 
   {/* Uncomment this section if needed
   <button className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full hover:bg-gray-100">
