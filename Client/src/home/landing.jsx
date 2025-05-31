@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import download from '../images/download.png';
+
 
 
 const LandingPage = () => {
@@ -8,9 +10,12 @@ const LandingPage = () => {
       {/* Hero Section */}
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
-        style={{ backgroundImage: `url('/pexels-anna-nekrashevich-8058547.jpg')` }}
+        style={{   backgroundImage: `url(${download})` }}
+
 
       >
+        {/* <img src="/bglanding.jpg" alt="test" className="w-64 h-64" /> */}
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 

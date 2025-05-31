@@ -15,8 +15,8 @@ function Home() {
     <>
       <LandingPage />
       <FAQSection />
-      {/* <ChatWithCounselor/>
-      <ScheduleCall/>
+     <ChatWithCounselor/>
+      { /* <ScheduleCall/>
       <ExerciseSuggestions /> */}
       <TestimonialPage />
       <BlogSection />
