@@ -10,37 +10,40 @@ const LandingPage = () => {
       {/* Hero Section */}
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat relative flex flex-col justify-between"
-        style={{ backgroundImage: `url('/pexels-anna-nekrashevich-8058547.jpg')` }}
+        style={{ backgroundImage: "url('/bglanding.png')",height: '100vh' }}
 
       >
+      {<div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div> }
+
         {/* <img src="/bglanding.jpg" alt="test" className="w-64 h-64" /> */}
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
 
         {/* Header */}
         <header className="relative z-10 flex justify-between items-center p-6 text-white">
           <div className="flex items-center gap-2 text-xl font-bold">
-            <span className="text-pink-400 text-2xl"></span> SAHAYAK💗
+            <span className="text-pink-400 text-2xl"></span> 
+             <span className="text-brown-700 font-extrabold font-serif text-3xl text-[#5C3317]">SAHAYAK💗</span>
           </div>
-          <nav className="flex flex-wrap gap-4 text-sm font-medium">
-            <a href="#about" className="hover:underline">
-              About us
-            </a>
-            {/* <a href="#therapy" className="hover:underline">
-              Considering Therapy
-            </a> */}
-            <a href="#contact" className="hover:underline">
-              Contact
-            </a>
+          <nav className="flex flex-wrap gap-4 text-large font-medium">
+          <a href="#about">
+  <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
+   About
+  </button>
+</a>      
+            <a href="#contact">
+              <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
+    Contact
+  </button>
+</a>    
             <Link to="/register">
-              <button className="border px-3 py-1 rounded hover:bg-white hover:text-black">
+            <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
                 SignUp
               </button>
             </Link>
 
             <Link to="/login">
-              <button className="border px-3 py-1 rounded hover:bg-white hover:text-black">
+              <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
                 Login
               </button>
             </Link>
@@ -48,12 +51,12 @@ const LandingPage = () => {
 
 
             <Link to="/chat">
-              <button className="border px-3 py-1 rounded hover:bg-white hover:text-black">
+             <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
                 Chat with Counselor
               </button>
             </Link>
             <Link to="/volunteer">
-              <button className="bg-white text-black px-3 py-1 rounded hover:bg-gray-200">
+             <button className="border px-3 py-1 rounded hover:bg-white hover:text-[#5C3317] text-[#5C3317]">
                 Support Sahayak
               </button>
             </Link>
@@ -62,19 +65,19 @@ const LandingPage = () => {
         </header>
 
         {/* Hero Content */}
-        <main className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4 py-20">
+      <main className="relative z-10 flex flex-col items-center justify-center text-center text-black px-4 py-20 font-bold text-lg md:text-xl lg:text-2xl">
+
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Your feelings are valid, and your healing is important.
           </h1>
-          <p className="text-lg md:text-xl mb-10 max-w-2xl">
-            Talk to caring, trained volunteers for free, or access professional emotional support anytime.
-          </p>
-
+          <p className="text-lg md:text-xl mb-10 max-w-2xl font-serif text-black-700">
+  Talk to caring, trained volunteers for free, or access professional emotional support anytime.
+</p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link to="/chat">
-              <button className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">
-                <span className="text-xs bg-white text-blue-600 px-2 py-0.5 rounded-full">
+           <Link to="/chat" style={{ textDecoration: 'none' }}>
+           <button className="flex items-center gap-2 bg-[#5C3317] text-white px-5 py-2 rounded-lg hover:bg-[#4b2813] no-underline">
+  <span className="text-xs bg-white text-[#5C3317] px-2 py-0.5 rounded-full">
                   100% FREE
                 </span>
                 Chat with a Volunteer Listener →
